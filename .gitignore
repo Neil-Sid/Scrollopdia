@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Frontend build copied here for production serving (see README)
+backend/public/
+
+# Vite cache
+.vite/
+node_modules/.vite/
+
+# SQLite database + WAL sidecars (db.ts runs in WAL mode)
+*.db
+*.db-shm
+*.db-wal
+
+# Environment / secrets (JWT_SECRET, DB_PATH)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
